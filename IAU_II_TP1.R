@@ -27,7 +27,7 @@ dim(renabap_2022)
 names(renabap_2022)
 # Aquí se puede observar en mayor detalle el contenido de las columnas. De manera preliminar, se definen como variables de interés: departamento, nombre_barrio, cantidad_viviendas_aproximadas, y cantidad_familias_aproximadas.
 
-# A partir de esta selección, se definen las siguientes preguntas a responder: ¿Cuántos barrios populares se encuentran en el Área Metropolitana de Buenos Aires y, en promedio, cuántas viviendas y familias contienen? ¿Cuáles son los 10 departamentos con mayor cantidad de barrios populares?
+# A partir de esta selección, se definen las siguientes preguntas a responder: ¿Cuántos barrios populares (BP) se encuentran en el Área Metropolitana de Buenos Aires y, en promedio, cuántas viviendas y familias contienen? ¿Cuáles son los 10 departamentos con mayor cantidad de barrios populares? ¿Cuál es el departamento con mayor cantidad de viviendas y familias? ¿Cuál es el barrio popular con mayor cantidad de viviendas y familias y dónde se encuentra?
 
 
 #4. Filtro y selección de datos
@@ -50,7 +50,7 @@ renabap_2022_amba <- renabap_2022 %>%
 
 summary(renabap_2022_amba)
 
-# Con estas primeras operaciones se puede responder la primera pregunta (¿cuántos barrios populares se encuentran en el Área Metropolitana de Buenos Aires?): 1688 barrios en total.
+# Con estas primeras operaciones se puede responder la primera pregunta (¿cuántos barrios populares se encuentran en el Área Metropolitana de Buenos Aires y, en promedio, cuántas viviendas y familias contienen?).
 
 # Se observan 1771 barrios populares existentes en el AMBA, que en promedio cuentan con 281 viviendas y 309 familias. 
 
@@ -65,7 +65,7 @@ barrios_por_departamentos <- renabap_2022_amba %>%
 
 top_10_departamentos <- head(barrios_por_departamentos, 10)
 
-# En síntesis, se agrupan los datos por el valor de la columna "departamento". Luego, se cuenta la cantidad de barrios populares en cada uno. Finalmente, se ordenan los resultados de manera descendente, para así poder extraer el top 5 de departamentos con mayor cantidad de BP. 
+# En síntesis, se agrupan los datos por el valor de la columna "departamento". Luego, se cuenta la cantidad de barrios populares en cada uno. Finalmente, se ordenan los resultados de manera descendente, para así poder extraer el top 10 de departamentos con mayor cantidad de BP. 
 
 # De este análisis, se extrae que los departamentos con mayor cantidad de BP son:
 
