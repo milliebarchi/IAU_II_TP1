@@ -1,1 +1,8 @@
-# IAU_II_TP1
+# Instrumentos de Análisis Urbano II  
+Trabajo Práctico 01  
+Maestría en Economía Urbana
+
+Alumna: Milagros Barchi  
+Fecha: 06/08/2023
+
+Para el presente Trabajo Práctico se ha creado un repositorio público en GitHub, vinculándolo a un proyecto desde RStudio. En este, se desarrolló un RScript en donde se trabaja una base de datos del último relevamiento nacional de barrios populares (RENABAP). Las preguntas a responder son: ¿Cuántos barrios populares se encuentran en el Área Metropolitana de Buenos Aires y, en promedio, cuántas viviendas y familias contienen? ¿Cuáles son las 5 departamentos con mayor cantidad de barrios populares? 
